@@ -27,20 +27,29 @@ public class ExtraCharacterInString
                 System.out.println(ca2[n2-1]);
             }
         }
-        
+        if(ca1[0]!=ca2[0])
+        {
+            if(n1>n2)
+            {
+                System.out.println(ca1[0]);
+            }
+            else
+            {
+                System.out.println(ca2[0]);
+            }
+        }
         else
         {
-                    for(int i=0;i<max;i++)
-                    {
-                        if(ca1[i]!=ca2[i])
-                        {
-                            if(n1>n2)
-                                System.out.println(ca1[i]);
-                            else
-                                System.out.println(ca2[i]);
-                        }
-                    }
+            for(int i=0;i<max;i++)
+            {
+                if(ca1[i]!=ca2[i])
+                {
+                    if(n1>n2)
+                        System.out.println(ca1[i]);
+                    else
+                        System.out.println(ca2[i]);
+                }
+            }
         }
-
     }
 }
